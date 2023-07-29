@@ -1,18 +1,11 @@
-<div align="center">
-
-![Pxls](https://i.imgur.com/udeloqX.png)
-
-![Java CI with Maven](https://img.shields.io/github/workflow/status/pxlsspace/Pxls/Java%20CI%20with%20Maven?style=flat-square)
-[![GitHub issues](https://img.shields.io/github/issues/pxlsspace/Pxls?style=flat-square)](https://github.com/pxlsspace/Pxls/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/pxlsspace/Pxls?style=flat-square)](https://github.com/pxlsspace/Pxls/pulls)
-[![GitHub contributors](https://img.shields.io/github/contributors/pxlsspace/Pxls?style=flat-square)](https://github.com/pxlsspace/Pxls/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/pxlsspace/Pxls?style=flat-square)](https://github.com/pxlsspace/Pxls/stargazers)
-
-</div>
-
 Pxls is a collaborative canvas where users can place one pixel from a limited palette at a time, inspired by Reddit's [r/Place][place] experiment.
 
-**Note:** A Docker image is available at [aneurinprice/docker-pxls.space][docker] and on [Docker Hub][dockerhub].
+`pxls-lemmy` is a fork of [Pxls](https://github.com/pxlsspace/pxls) that aims to run a short-lived version of it utilizing [Lemmy](https://join-lemmy.org)
+
+* [Lemmy Community](https://toast.ooo/c/canvas)
+* [Matrix Space](https://matrix.to/#/#lemmy-canvas:matrix.org)
+
+---
 
 # Installation
 
