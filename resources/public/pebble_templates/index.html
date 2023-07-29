@@ -134,19 +134,9 @@
     <div id="signup" class="message floating-panel">
         <div class="content">
           <h1>{{i18n('Localization', 'Sign up') | raw}}</h1>
-          <h4>{{i18n('Localization', 'Pick a username') | raw}}</h4>
           <p>
-              <label class="input-group">
-                  <span class="label-text">{{i18n('Localization', 'Username:') | raw}}</span>
-                  <input id="signup-username-input" type="text" maxlength="32">
-              </label>
+            Click the button below to confirm your signup
           </p>
-            <p>
-                <label class="input-group">
-                    <span class="label-text">{{i18n('Localization', 'Discord Tag (Optional):') | raw}}</span>
-                    <input id="signup-discord-input" type="text" maxlength="64" placeholder="Username#1234">
-                </label>
-            </p>
           <div class="error" id="error"></div>
         </div>
         <button id="signup-button" class="float-right text-button">{{i18n('Localization', 'Sign up') | raw}}</button>
@@ -821,16 +811,7 @@
             </header>
             <div class="pad-wrapper">
                 <section data-keywords="personal;account;user">
-                    <div data-keywords="discord username">
-                        <label class="input-group">
-                            <span class="label-text">{{i18n('Localization', 'Public Discord name:') | raw}}</span>
-                            <input class="fullwidth" type="text" placeholder="pxlslover#1337" id="txtDiscordName">
-                        </label>
-                        <div class="button-bar">
-                            <button class="text-button" id="btnDiscordNameSet">{{i18n('Localization', 'Set') | raw}}</button>
-                            <button class="text-button" id="btnDiscordNameRemove">{{i18n('Localization', 'Remove') | raw}}</button>
-                        </div>
-                    </div>
+                    
                 </section>
             </div>
         </article>

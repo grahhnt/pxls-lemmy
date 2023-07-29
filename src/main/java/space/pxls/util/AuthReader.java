@@ -32,24 +32,24 @@ public class AuthReader implements HttpHandler {
                 }
             }
         } else {
-            String ip = exchange.getAttachment(IPReader.IP);
-
-            final User[] user = new User[1];
-            if (loginCache.containsKey(ip)) {
-                user[0] = App.getUserManager().getByToken(loginCache.get(ip));
-            } else {
-                loginCache.compute(ip, (key, old) -> {
-                    user[0] = App.getUserManager().getSnipByIP(ip);
-
-                    if (user[0] == null) {
-                        String signupToken = App.getUserManager().generateUserCreationToken(new UserLogin("ip", ip));
-                        user[0] = App.getUserManager().signUp(MD5.compute(ip), signupToken, ip);
-                    }
-
-                    return App.getUserManager().logIn(user[0], ip);
-                });
-            }
-            exchange.putAttachment(USER, user[0]);
+//            String ip = exchange.getAttachment(IPReader.IP);
+//
+//            final User[] user = new User[1];
+//            if (loginCache.containsKey(ip)) {
+//                user[0] = App.getUserManager().getByToken(loginCache.get(ip));
+//            } else {
+//                loginCache.compute(ip, (key, old) -> {
+//                    user[0] = App.getUserManager().getSnipByIP(ip);
+//
+//                    if (user[0] == null) {
+//                        String signupToken = App.getUserManager().generateUserCreationToken(new UserLogin("ip", ip));
+//                        user[0] = App.getUserManager().signUp(MD5.compute(ip), signupToken, ip);
+//                    }
+//
+//                    return App.getUserManager().logIn(user[0], ip);
+//                });
+//            }
+//            exchange.putAttachment(USER, user[0]);
         }
 
         next.handleRequest(exchange);
